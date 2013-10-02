@@ -1,0 +1,156 @@
+
+	Lenguajes y Paradigmas de Programación: Práctica 1.
+
+18.- Muestra solo mundo y devuelve nil ( NULL en ruby ).
+
+21.- La diferencia reside en que ruby evalua las expresiones cuando se escriben entre ", es decir, \t = tabulación y \n = salto de línea, mientras que  las cadenas entre ' se leen de manera literal.
+
+22-23.- Empleamos q para indicar que la siguiente expresion no deseamos evaluarla y Q para cuando si lo queremos. ( q = ', Q = " ).
+
+24.- Dentro de c queda "--4--\n--2--\n" ==>
+--4--
+--2--
+
+25.- Dentro de c queda "--\#{a}--\n--\#{b}--\n"  ==> 
+--#{a}--
+--#{b}--
+
+26.- s[0,2] = "he"
+     s[-1,1] = "o"
+     s[0,10] = "hello"
+
+27.- g = "hello world"
+
+28.- e = "..."
+
+29.- El resultado es "2 2 2 "
+
+30.- Es un array de cuatro cadenas de caracteres.
+
+31.- Es un array de cadenas de caracteres, se toman el \t y el \n literales no como caracteres epeciales. No hay evalución.
+
+32.- Es un array de caracteres, se toman el \t y el \n como caracteres especiales (tabulador y salto de línes). Hay evaluación. 
+
+33.- Contiene tres objetos nulos (nil).
+
+34.- Contiene tres 0, el segundo parametro pasado por new.
+
+35.- b almacena x. 
+
+36.- En c se almacena [0, 2, 4]. Array de tamaño 3 con la expresion { |i| 2*i } en cada uno de sus términos.
+
+37.- 
+	a[1,1] = ["b"] 
+   	a[-2,2] = ["d","e"]
+	a[0..2] = ["a", "b", "c"]
+	a[0...1] = ["a"] 
+	a[-2..-1] = ["d", "e"] 
+
+38.-
+	a= ["A", "B", "c", "d", "e"] 
+	a= ["A", "B", "C", "D", "E"]
+	a= [1, 2, 3, "A", "B", "C", "D", "E"]
+	a= [3, "A", "B", "C", "D", "E"] 
+	a= [3, "A", "B", "C", "D", "z"]  
+	a= [3, "A", "B", "C", nil] 
+ 
+39.-
+	a=[1, 2, 3]
+	a=[1, 2, 3, 4, 5] 
+	a=[1, 2, 3, 4, 5, [6, 7, 8]]
+	a= error 
+
+40.- 
+
+	x= ["a", "b", "c", "b", "a"]
+	x= ["a", "a"]
+
+41.- 
+
+	z=[0, 0, 0, 0, 0, 0, 0, 0]
+
+42.- 
+	a=[] 
+	a=[1]
+	a=[1, 2, 3]	
+	a=[1, 2, 3, [4, 5, 6]] 
+	a=[1, 2, 3, [4, 5, 6], 7, 8] 
+
+43.- 
+	c=[1, 2, 3, 4, 5] 
+	d=[5, 4, 3, 2, 1] 
+	e=[2, 3, 4]
+	f=[4, 3, 2]
+ 
+44.- 
+	a=1..10
+	a.class= range
+	a.to_a= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+	b=1...10
+	b.to_a= [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	b.include? 10= false
+	b.include? 8 = true
+	b.step(2) {|x| print "#{x}= 1...10
+	1..3.to_a = error
+
+45.-
+
+	r.menber? 50 = true
+	r.include? 99.9 =true
+	r.menber? 99.9 =true
+
+46.-
+	true.class= TrueClass
+	false.class= FasleClass
+	puts "hello" if 0 = hello
+	puts "hello" if nil = 
+	puts "hello" if "" = (warning: string literal in condition) hello
+
+47.-
+
+	x.class= Symbol
+	x == 'sym' = false
+	x == :sym = true
+	z.class = string
+	x == 'sym'.to_sym = true
+	x.to_s == 'sym' = true
+
+48.-
+
+	print s = rub
+	print s, t = rubjava
+
+49.-
+
+	"%d %s" % [3, "rubies"] = "3 rubies"
+
+50.-
+
+	x, y = 4, 5 = [4, 5]
+	z = x > y ? x : y = 5
+	x,y,z = [1,2,3] = [1, 2, 3]
+
+51.-
+	x.keys= [:a, :b]
+	x.values = [1, 2]
+	x = {:a=>1, :b=>2, :c=>3} 
+	x = {:a=>1, :b=>2, :c=>3}
+	x = {:b=>2, :c=>3}
+	x.delete_if { |k,v| v % 2== 0} = {:a=>1}
+
+52.- 
+	Ejecuta los bloques definidos previamente.
+
+53.- 
+	El array creado con hash permite usar cualquier tipo de objeto en los indices en vez de solo int. 
+	
+54.- 
+	Devuelve el conjunto de cadenas den la expresion ( ["hello", "world", "hello", "LPP"] ).
+
+55.-
+	La primera línea crea un objeto c con tres valores ( 3, 2, 1) y tres indices tipo simbolo ( :a :b, :c). La segunda línea, devuelve c[k] siendo k cada una de las llaves, en este caso los simbolos :a, :b y :c.
+
+	
+	
+	
+	
